@@ -1,18 +1,21 @@
+/* Podstawowy kod */
 body {
   font-family: 'Poppins', sans-serif;
-  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364); /* <-- wybierz swój */
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
   color: #f5f5f5;
   margin: 0;
   padding: 0;
   line-height: 1.6;
   background-image: url(images/jeremy-perkins-uhjiu8FjnsQ-unsplash.jpg);
-  
+  background-size: cover;
+  background-position: center;
 }
+
 header {
   background-color: #474747c7;
   border-bottom: 2px solid #ccc;
   padding: 10px 0;
-  color:gold;
+  color: gold;
 }
 
 .header-content {
@@ -20,25 +23,21 @@ header {
   align-items: center;
   justify-content: space-between;
   max-width: 1800px;
-  margin: 0 0;
+  margin: 0 auto;
   padding: 0 20px;
- 
 }
 
 .logo img {
-  height:100px;
-  width:auto;
+  height: 100px;
+  width: auto;
   display: flex;
   justify-content: center;
   align-items: center;
-
-  
 }
 
-/* Tekst nagłówka */
 header h1 {
   font-size: 30px;
-  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
   text-align: center;
   flex: 1;
 }
@@ -70,6 +69,7 @@ header h1 {
   background-color: #3b5998;
   color: white;
 }
+
 .user-actions {
   display: flex;
   gap: 15px;
@@ -95,7 +95,6 @@ header h1 {
   color: white;
 }
 
-
 /* Nawigacja */
 nav {
   background-color: #000000;
@@ -107,32 +106,21 @@ nav ul {
   justify-content: center;
   padding: 10px 0;
   margin: 0;
-  
-  
-}
-nav ul li a {
-  padding: 10px 20px;
-  transition: background 0.3s;
 }
 
-
-
-nav li {
-  margin: 0 100px;
-  
-  
+nav ul li {
+  margin: 0 20px;
 }
 
 nav a {
   color: #fff;
   text-decoration: none;
   font-weight: bold;
-  
 }
 
 nav a:hover {
   text-decoration: none;
-  color:gold;
+  color: gold;
 }
 
 /* Główna sekcja */
@@ -143,11 +131,11 @@ main {
   border-radius: 8px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   background-image: url('images/siłka.jfif');
-  background-position: center;   /* wyśrodkowanie */
+  background-position: center;
   background-repeat: no-repeat;
-  
-
 }
+
+/* Kontener */
 .kontener {
   height: 300px;
   background-image: url(images/weights-exercise-weightlifter-strong-athletic.jpg);
@@ -160,83 +148,79 @@ main {
   text-align: center;
   position: relative;
   color: rgb(231, 19, 19);
-  font-size: 4rem;
+  font-size: 3rem;
   font-weight: bold;
-  background-color: rgba(0, 0, 0, 0.5); /* ciemne tło pod tekstem */
+  background-color: rgba(0, 0, 0, 0.5);
   padding: 20px 40px;
   border-radius: 10px;
- 
-  
 }
+
 .chmurka {
   background: rgba(0, 0, 0, 0.7);
   color: rgb(134, 17, 17);
   padding: 20px 40px;
   border-radius: 20px;
-  font-size: 2rem;
+  font-size: 1.5rem;
   text-align: center;
-  text-shadow: 0 2px 10px rgba(0,0,0,0.7);
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.7);
   text-decoration: none;
-  border:none !important;
-  
+  border: none !important;
 }
+
+/* Przycisk */
 .btn-start {
   display: inline-block;
   background: linear-gradient(135deg, #1f1c2c, #928dab);
   color: #fff;
   padding: 15px 30px;
-  font-size: 18px;
+  font-size: 1.2rem;
   font-weight: bold;
   text-decoration: none;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-  border:none !important;
+  border: none !important;
   outline: none;
-  
-
 }
 
 .btn-start:hover {
   transform: scale(1.05);
   box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
 }
-  
+
+/* Kontent */
 .content {
   max-width: 1300px;
-  margin:  auto;
+  margin: auto;
   padding: 10px;
   line-height: 1.8;
   font-size: 18px;
   text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
   background-color: #333;
   background: linear-gradient(to bottom, #444, #222);
-  font-family:Georgia, 'Times New Roman', Times, serif;
-  
+  font-family: Georgia, 'Times New Roman', Times, serif;
 }
-.content h1  {
+
+.content h1 {
   margin-bottom: 50px;
   text-align: center;
-  color:white;
-
+  color: white;
 }
+
 .content h3 {
   margin-bottom: 50px;
   text-align: center;
-  color:white;
+  color: white;
 }
+
 .content p {
   margin-top: 20px;
   font-style: italic;
 }
-.poradniki {
-  text-align:center;
-  background-color: #333;
-  color: #ffffff;
-  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
-}
+
+/* Galeria */
 .galeria {
   display: flex;
-  flex-wrap: wrap; /* Złamie do nowej linii jeśli potrzeba */
+  flex-wrap: wrap;
   justify-content: center;
   gap: 40px;
   padding: 40px;
@@ -268,21 +252,23 @@ main {
   margin-top: 15px;
   color: #333;
 }
+
+/* Dieta */
 .Dieta h1 {
   text-align: center;
   background-color: #333;
-  color:#ffffff;
-
+  color: #ffffff;
 }
+
 .szamka {
   display: flex;
-  flex-wrap: wrap; /* Złamie do nowej linii jeśli potrzeba */
+  flex-wrap: wrap;
   justify-content: center;
   gap: 40px;
   padding: 40px;
 }
 
-.dietki{
+.dietki {
   width: 300px;
   text-align: center;
   background-color: #f2f2f2;
@@ -291,7 +277,6 @@ main {
   box-shadow: 0 4px 12px rgba(0,0,0,0.1);
   transition: transform 0.3s ease;
   text-decoration: none;
-  
 }
 
 .dietki:hover {
@@ -309,13 +294,16 @@ main {
   margin-top: 15px;
   color: #333;
 }
+
+/* Plany */
 .plansy {
   display: flex;
-  flex-wrap: wrap; /* Złamie do nowej linii jeśli potrzeba */
+  flex-wrap: wrap;
   justify-content: center;
   gap: 40px;
   padding: 40px;
 }
+
 .boxik {
   width: 300px;
   text-align: center;
@@ -325,148 +313,106 @@ main {
   box-shadow: 0 4px 12px rgba(0,0,0,0.1);
   transition: transform 0.3s ease;
   text-decoration: none !important;
-  
 }
-
 
 .boxik:hover {
   transform: scale(1.05);
-  
- 
 }
 
 .boxik img {
   width: 100%;
   height: 80%;
   border-radius: 10px;
-  
 }
 
 .boxik h2 {
   font-size: 1.2rem;
   margin-top: 15px;
   color: #333;
-  
 }
+
 .section {
   background: rgba(255, 255, 255, 0.05);
   padding: 40px;
   border-radius: 20px;
 }
+
 /* Stopka */
 footer {
-  
   text-align: center;
   padding: 3px;
   background-color: #333;
   color: #fff;
-  
 }
+
+/* Responsywność dla mniejszych ekranów */
 @media (max-width: 768px) {
   .header-content {
-    flex-direction: column; /* Zmiana układu na kolumnowy */
+    flex-direction: column;
     align-items: center;
   }
 
   header h1 {
-    font-size: 2rem; /* Zmniejszenie czcionki nagłówka */
-  }
-
-  .social-buttons {
-    margin-top: 10px;
+    font-size: 2rem;
   }
 
   nav ul {
-    flex-direction: column; /* Menu w kolumnie */
+    flex-direction: column;
   }
 
   nav ul li {
-    margin: 10px 0; /* Mniejszy margines dla elementów menu */
+    margin: 10px 0;
   }
 
   .kontener {
-    font-size: 2rem; /* Zmniejszenie rozmiaru tekstu */
-  }
-
-  .box, .dietki, .boxik {
-    width: 100%; /* Ustawienie elementów na 100% szerokości */
-    margin-bottom: 20px; /* Dodanie przestrzeni między elementami */
-  }
-
-  .box img, .dietki img, .boxik img {
-    width: 100%; /* Obrazy na pełną szerokość */
-    height: auto;
-  }
-
-  .search-box {
-    margin-left: 0;
-    max-width: 100%; /* Pełna szerokość na telefonach */
-  }
-
-  .search-box input {
-    font-size: 14px; /* Mniejsza czcionka w polu wyszukiwania */
-  }
-
-  footer {
-    font-size: 14px; /* Mniejsza czcionka w stopce */
-  }
-}
-
-/* Dostosowanie dla bardzo małych ekranów (np. telefony w pionie) */
-@media (max-width: 480px) {
-  .kontener {
-    font-size: 1.5rem; /* Zmniejszenie czcionki */
+    font-size: 2rem;
     padding: 15px;
   }
 
+  .box, .dietki, .boxik {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .box img, .dietki img, .boxik img {
+    width: 100%;
+    height: auto;
+  }
+
+  footer {
+    font-size: 14px;
+  }
+}
+
+/* Dla bardzo małych ekranów */
+@media (max-width: 480px) {
+  .kontener {
+    font-size: 1.5rem;
+  }
+
   header h1 {
-    font-size: 1.5rem; /* Zmniejszenie czcionki */
+    font-size: 1.5rem;
   }
 
   .btn-start {
-    font-size: 1rem; /* Mniejszy przycisk */
+    font-size: 1rem;
     padding: 10px 20px;
   }
 
   .box, .dietki, .boxik {
-    margin-bottom: 15px; /* Zmniejszenie przestrzeni */
+    margin-bottom: 15px;
   }
-}
 
-.search-box {
-  position: relative;
-  width: 100%;
-  max-width: 200px;
-  margin-top: -70px;
-  margin-left: 1200px;
+  .search-box {
+    margin-left: 0;
+    max-width: 100%;
+  }
 
-  
-}
+  .search-box input {
+    font-size: 14px;
+  }
 
-.search-box input {
-  width: 100%;
-  padding: 10px 40px 10px 10px;
-  font-size: 16px;
-  border: 2px solid #ccc;
-  border-radius: 10px;
-  
- 
-}
-
-.search-icon {
-  position: absolute;
-  right: 10px;
-  top: 50%;
-  transform: translateY(-50%);
-  font-size: 18px;
-  color: gray;
-  
-}
-
-.exercise {
-  padding: 10px;
-  margin-bottom: 5px;
-  background-color: #421616;
-  border-radius: 8px;
-  font-size: 18px;
+  footer {
+    font-size: 12px;
+  }
 }
