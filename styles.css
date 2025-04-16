@@ -363,10 +363,76 @@ footer {
   
 }
 @media (max-width: 768px) {
+  .header-content {
+    flex-direction: column; /* Zmiana układu na kolumnowy */
+    align-items: center;
+  }
+
+  header h1 {
+    font-size: 2rem; /* Zmniejszenie czcionki nagłówka */
+  }
+
+  .social-buttons {
+    margin-top: 10px;
+  }
+
+  nav ul {
+    flex-direction: column; /* Menu w kolumnie */
+  }
+
+  nav ul li {
+    margin: 10px 0; /* Mniejszy margines dla elementów menu */
+  }
+
+  .kontener {
+    font-size: 2rem; /* Zmniejszenie rozmiaru tekstu */
+  }
+
   .box, .dietki, .boxik {
-    width: 100%;   /* Pełna szerokość dla mniejszych ekranów */
+    width: 100%; /* Ustawienie elementów na 100% szerokości */
+    margin-bottom: 20px; /* Dodanie przestrzeni między elementami */
+  }
+
+  .box img, .dietki img, .boxik img {
+    width: 100%; /* Obrazy na pełną szerokość */
+    height: auto;
+  }
+
+  .search-box {
+    margin-left: 0;
+    max-width: 100%; /* Pełna szerokość na telefonach */
+  }
+
+  .search-box input {
+    font-size: 14px; /* Mniejsza czcionka w polu wyszukiwania */
+  }
+
+  footer {
+    font-size: 14px; /* Mniejsza czcionka w stopce */
   }
 }
+
+/* Dostosowanie dla bardzo małych ekranów (np. telefony w pionie) */
+@media (max-width: 480px) {
+  .kontener {
+    font-size: 1.5rem; /* Zmniejszenie czcionki */
+    padding: 15px;
+  }
+
+  header h1 {
+    font-size: 1.5rem; /* Zmniejszenie czcionki */
+  }
+
+  .btn-start {
+    font-size: 1rem; /* Mniejszy przycisk */
+    padding: 10px 20px;
+  }
+
+  .box, .dietki, .boxik {
+    margin-bottom: 15px; /* Zmniejszenie przestrzeni */
+  }
+}
+
 .search-box {
   position: relative;
   width: 100%;
