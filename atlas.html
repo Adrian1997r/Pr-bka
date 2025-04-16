@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Atlas Ćwiczeń</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+      body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background:#919090;
+      color: black;
+    }
+
+    .atlas-container {
+      max-width: 1200px;
+      margin: 10px auto;
+      padding: 0px;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 30px;
+    }
+
+    .atlas-item {
+      background: #f2f2f2;
+      border-radius: 15px;
+      overflow: hidden;
+      text-align: center;
+      box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease;
+    }
+
+    .atlas-item:hover {
+      transform: translateY(-10px);
+    }
+
+    .atlas-item img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .atlas-item h2 {
+      padding: 15px 0;
+      margin: 0;
+      font-size: 1.2rem;
+      background-color: #2e2e2e;
+      color: white;
+    }
+
+    h1 {
+      text-align: center;
+      margin-top: 10px;
+      font-size: 3rem;
+      background: linear-gradient(to right, #e63946, #457b9d);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      animation: glow 2s ease-in-out infinite alternate;
+    }
+    @keyframes glow {
+      0% {
+        text-shadow: 0 0 10px rgba(230, 57, 70, 0.5);
+      }
+      100% {
+        text-shadow: 0 0 20px rgba(69, 123, 157, 0.8);
+      }
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @media (max-width: 768px) {
+      .atlas-container {
+        grid-template-columns: repeat(1, 1fr);
+      }
+    }
+  </style>
+</head>
+<body>
+  <h1>Atlas Ćwiczeń</h1>
+  <div class="atlas-container">
+    <div class="atlas-item">
+      <img src="images/klata.jpg" alt="klatka piersiowa">
+      <h2>Klata</h2>
+    </div>
+    <div class="atlas-item">
+      <img src="images/barki.jpg" alt="barki">
+      <h2>Barki</h2>
+    </div>
+    <div class="atlas-item">
+      <img src="images/trening plecow.jpg" alt="plecy">
+      <h2>Plecy</h2>
+    </div>
+    <div class="atlas-item">
+      <img src="images/biceps.jpg" alt="biceps">
+      <h2>Biceps</h2>
+    </div>
+    <div class="atlas-item">
+      <img src="images/triceps.jpg" alt="triceps">
+      <h2>Triceps</h2>
+    </div>
+    <div class="atlas-item">
+      <img src="images/nogi.jpg" alt="nogi">
+      <h2>Nogi</h2>
+    </div>
+    <div class="atlas-item">
+      <img src="images/brzuch.jpg" alt="brzuch">
+      <h2>Brzuch</h2>
+    </div>
+    <div class="atlas-item">
+      <img src="images/przedramiona.jpg" alt="przedramię">
+      <h2>Przedramię</h2>
+    </div>
+    <div class="atlas-item">
+      <img src="images/łydki.jpg" alt="łydki">
+      <h2>Łydki</h2>
+    </div>
+  </div>
+</body>
+</html>
